@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="C:\Users\Ronald Pava\wwebp\style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guia de html no1</title>
+</head>
+<body>
+    <h1>Guia de HTML No1</h1>
+    <ol>
+        <li><h2>INTRODUCCION</h2><br>
+        <h3>En esta guia aprenderemos los conceptos basicos de HTML.</h3>
+    <h4>HTML (HyperText Markup Language) es el lenguaje de marcado estandar para crear paginas web.</h4></li><br>
+    <li><h2>ELEMENTOS BASICOS</h2><br>
+        <h3>Los elementos basicos de HTML incluyen:</h3>
+        <ul>
+            <li><h3>Etiquetas</h3>
+            <li>
+                <code>&lt;h1&gt;</code> - Encabezado principal <br>
+                <code>&lt;h2&gt;</code> - Subencabezado <br>
+                <code>&lt;h3&gt;</code> - Encabezado de tercer nivel <br>
+                <code>&lt;h4&gt;</code> - Encabezado de cuarto nivel <br>
+                <code>&lt;h5&gt;</code> - Encabezado de quinto nivel <br>
+                <code>&lt;h6&gt;</code> - Encabezado de sexto nivel <br>
+                <code>&lt;h7&gt;</code> - Encabezado de septimo nivel <br>
+                <code>&lt;h8&gt;</code> - Encabezado de octavo nivel <br>
+                <code>&lt;h9&gt;</code> - Encabezado de noveno nivel <br>
+                <code>&lt;h10&gt;</code> - Encabezado de decimo nivel <br>
+                <code>&lt;h11&gt;</code> - Encabezado de undécimo nivel <br>
+                <p>sigue asi hasta el h11</p>
+                <code>&lt;p&gt;</code> - párrafo <br>
+                <code>&lt;div&gt;</code> - contenedor <br>
+                <code>&lt;span&gt;</code> - contenedor en línea <br>
+                <code>&lt;header&gt;</code> - encabezado <br>
+                <code>&lt;footer&gt;</code> - pie de página <br>
+                <code>&lt;main&gt;</code> - contenido principal <br>
+                <code>&lt;section&gt;</code> - sección <br>
+                <code>&lt;article&gt;</code> - artículo <br>
+                <code>&lt;a&gt;</code> - para crear links <br>
+            </li>
+            <li><h2>Atributos</h2>
+            <h3>Los atributos son propiedades adicionales que se pueden agregar a las etiquetas HTML para proporcionar información adicional sobre el elemento.</h3>
+            <h4>Por ejemplo:</h4>
+            <ul>
+                <li><code>href</code> - Especifica la URL de un enlace.</li>
+                <li><code>src</code> - Especifica la URL de una imagen.</li>
+                <li><code>alt</code> - Proporciona un texto alternativo para una imagen.</li>
+                <li><code>class</code> - Especifica una clase para aplicar estilos CSS.</li>
+                <li><code>id</code> - Especifica un identificador único para un elemento.</li>
+            </ul>
+           </li>
+            <li><h2>Contenido</h2>
+            <h3>El contenido de una página web se define dentro de las etiquetas HTML.</h3>
+            <h4>Por ejemplo:</h4>
+            <pre>
+            &lt;h1&gt;Título Principal&lt;/h1&gt;
+            &lt;p&gt;Este es un párrafo de texto.&lt;/p&gt;
+            &lt;div&gt;
+                &lt;h2&gt;Subtítulo&lt;/h2&gt;
+                &lt;p&gt;Este es otro párrafo dentro de un contenedor.&lt;/p&gt;
+            &lt;/div&gt;
+            </pre>
+            </li>
+            <li><h2>Ejemplo de Estructura HTML</h2>
+            <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+                &lt;title&gt;Mi Página Web&lt;/title&gt;
+                &lt;link rel="stylesheet" href="estilos.css"&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;header&gt;
+                    &lt;h1&gt;Bienvenido a Mi Página Web&lt;/h1&gt;
+                &lt;/header&gt;
+                &lt;main&gt;
+                    &lt;section&gt;
+                        &lt;h2&gt;Sobre Mí&lt;/h2&gt;
+                        &lt;p&gt;Este es un párrafo sobre mí.&lt;/p&gt;
+                    &lt;/section&gt;
+                &lt;/main&gt;
+                &lt;footer&gt;
+                    &lt;p&gt;© 2025 Mi Página Web&lt;/p&gt;
+                &lt;/footer&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+            </pre>
+            </li>
+            <li><h2>como decorar una pagina web</h2>
+            <h3>Para decorar una pagina web, podemos utilizar CSS (Cascading Style Sheets).</h3>
+            <h4>CSS nos permite aplicar estilos a los elementos HTML, como colores, fuentes y layout.</h4>
+            <h2>como implantar CSS en tu pagina web</h2>
+            <h3>Para implantar CSS en tu pagina web, puedes utilizar la etiqueta <code>&lt;style&gt;</code> dentro de la sección <code>&lt;head&gt;</code> de tu documento HTML. Por ejemplo:</h3>
+            <pre>
+            &lt;style&gt;
+                body {
+                    background-color: #f0f0f0;
+                    font-family: Arial, sans-serif;
+                }
+                h1 {
+                    color: #2c3e50;
+                }
+            &lt;/style&gt;
+            </pre>
+            <h4>También puedes enlazar un archivo CSS externo usando la etiqueta <code>&lt;link&gt;</code>:</h4>
+            <pre>
+            &lt;link rel="stylesheet" href="estilos.css"&gt;
+            </pre>
+            </li>
+
+        </ul>
+        <!-- ...existing code... -->
+<h3 id="texto-copiable">link rel="stylesheet" href="estilos.css</h3>
+<button onclick="copiarTexto()">Copiar los codigos</button>
+
+<script>
+function copiarTexto() {
+    const texto = document.getElementById('texto-copiable').textContent;
+    navigator.clipboard.writeText(texto)
+        .then(() => alert('Texto copiado al portapapeles'))
+        .catch(() => alert('No se pudo copiar el texto'));
+}
+</script>
+<!-- ...existing code... -->
+    </li>
+
+    </ol>
+    <!-- ...existing code... -->
+<a href="C:\Users\Ronald Pava\wwebp\style.css" download>
+    <button>Descargar archivo CSS</button>
+</a>
+<!-- ...existing code... -->
+</body>
+<footer>
+    
+    <footer style="text-align: center; padding: 24px 0;">
+    <p>© 2025 Mi Página Web</p>
+    <p>Esta página web es un ejemplo de uso de HTML y CSS.</p>
+    <p>Hecho por Ronald Pava</p>
+    <img src="C:\Users\Ronald Pava\Downloads\logo.png"
+         alt="Página web logo"
+         style="display: block; margin: 16px auto; max-width: 120px;">
+</footer>
+</footer>
+</html>
